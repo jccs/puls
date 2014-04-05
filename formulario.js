@@ -8,6 +8,7 @@ var $form = $('#formulario'),
 
 function mostrarFormulario(){
 	$form.slideToggle();
+	$list.slideToggle();
 	return false;
 }
 
@@ -21,6 +22,7 @@ function agregarPost(){
 		.attr('href', url);
 	$clone.hide();
 	$list.prepend($clone);
+	mostrarFormulario();
 	$clone.fadeIn();
 	return false;
 }
