@@ -191,12 +191,6 @@ nav ul #publicar_nav a:hover
 {
 	box-shadow: 0 0 30px yellow;
 }
-#publicar_nav a.disabled
-{
-	background-color: grey;
-	cursor: default;
-	box-shadow: none;
-}
 #contenido
 {
 	margin: 1em;
@@ -283,7 +277,12 @@ nav ul #publicar_nav a:hover
 {
 	color: #22BC68;
 }
-
+#publicar_nav a.disabled
+{
+	background-color: grey;
+	cursor: default;
+	box-shadow: none;
+}
 /*----- Media queries -------*/
 
 @media screen and (min-width: 800px)
