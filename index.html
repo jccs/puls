@@ -208,6 +208,9 @@
 		// El comando de arriba hace lo mismo que el de abajo =D
 		$(function() {
 			console.log("Evento DOMContentLoaded ha sido disparado");
+			$('#publicar_nav a').on('click', function(){
+				$(this).toggleClass('disabled');
+			});
 		});
 	</script>
 	

@@ -39,4 +39,18 @@ function agregarPost(e){
 }
 // Eventos
 $button.click(mostrarFormulario);
-$form.on('submit', agregarPost);
+$form
+	.on('submit', agregarPost)
+	.find('#url')
+	.on('focus', function(){
+		var valorUrl = $('#url').val();
+		if (valorUrl == '') {
+			$('#url').val('http://');
+		}
+	})
+	.on('blur', function(){
+		var valorUrl = $('#url').val();
+		if (valorUrl == 'http://') {
+			$('#url').val('');
+		}
+	});
